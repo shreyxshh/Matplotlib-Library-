@@ -14,7 +14,7 @@ plt.plot(x, y1, label = "Squares", color="pink")
 #line 2 
 plt.plot(x, y2, label = "Line", color="red")
 
-plt.legend()
-plt.grid(True)
+plt.legend() #shows the labels in highlighted manner 
+plt.grid(True)#shows a grid in plot 
 
 plt.show()
