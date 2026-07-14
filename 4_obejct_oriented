@@ -1,0 +1,28 @@
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+
+# Step 1: Create a Figure (canvas)
+fig = plt.figure(figsize=(6,4))
+
+# Step 2: Add Axes (left, bottom, width, height) in 0-1 range
+#this shows the dimensions of the axes which is to added on the figure and range for "0-1"
+ax = fig.add_axes([0.1, 0.1, 0.8, 0.8])
+
+# Step 3: Plot data on the Axes
+ax.plot(x, y, color="purple", marker="o", linestyle="-")
+
+# Step 4: Customize
+ax.set_title("Object-Oriented Plot")
+ax.set_xlabel("X-axis")
+ax.set_ylabel("Y-axis")
+ax.grid(True)
+
+#we can also add multiple axes to the same figure 
+axes2 = fig.add_axes([0.2,0.5,0.3,0.3])
+axes2.plot(x,y)
+plt.title("world")
+
+plt.show()
