@@ -41,5 +41,5 @@ plt.show()
 #4. 75% - upper quatile
 #5. max - highest
 
-#values btw loer and upper quatile are generic or actual values
+#values btw lower and upper quatile are generic or actual values
 #values outside of them are considered as outliers
